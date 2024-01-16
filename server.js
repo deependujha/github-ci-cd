@@ -11,6 +11,14 @@ app.get("/", (req, res) =>
     });
 });
 
+app.get("/meow", (req, res) =>
+{
+    res.send({
+        status: "success",
+        msg: "meow meow😼"
+    });
+});
+
 app.listen(PORT, () =>
 {
     console.log(`App running on port: ${PORT}`);
